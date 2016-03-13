@@ -10,6 +10,47 @@ this.Input = function (c) {
     
     So create a opbect like input = new Input() and call input.InputUpdate(); at the end of your loops
     
+    ---------------------------------------------------------------------
+    The functions and variables you can read from:    
+    ---------------------------------------------------------------------
+
+    Variables: 
+    
+    anyKey: this will be true while any key is held down
+    ----------
+    anyKeyDown: this is true for one frame at the moment any key is 
+    ----------
+    anyKeyUp: this will fire true for one frame at the moment any key is released 
+    
+    mouseAcceleration: this is a float that shows the acceleration of the mouse
+    ----------
+    mouseDelta: Shows the acceleration as a Vector2 object
+    ----------
+    mousePosition: Shows the position of a mouse as a Vector2
+    ----------
+    mouseMoving: Is true when the mouse is moving
+    
+    scrollWheelDelta: Shows the how much the scroll wheel has scrolled if it scrolls
+    ----------
+    scrolling: Turns true when the mouse is scrolling
+    
+    Functions: 
+    
+    GetMouseButton: Give a mouse button code and it will return if that button is 
+    currently being held down
+    ----------
+    GetMouseButtonDown: Give a mouse button code and it will return if that button
+    is being pressed
+    ----------
+    GetMouseButtonUp: Give a mouse button code and it will return if that button 
+    is being released
+    
+    GetKey: Give a keycode and it will return if that key is being held down 
+    ----------
+    GetKeyDown: Give a keycode and it will return if that key is pressed
+    ----------
+    GetKeyUp: Give a keycode and it will return if that key is released
+    
     */
 
     if (c == undefined) console.log("No canvas given with input")
